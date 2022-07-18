@@ -9,7 +9,7 @@ function Breakfast() {
     const [breakfastPhoto, setBreakfastPhoto] = useState('')
 
     useEffect(() => {
-        const url = "https://foodish-api.herokuapp.com/api/"
+        const url = "https://foodish-api.herokuapp.com/api/images/dosa"
         fetch(url)
             .then((res) => {
                 return res.json()
@@ -24,7 +24,7 @@ function Breakfast() {
         },[])
 
         function handleClick() {
-            const url = "https://foodish-api.herokuapp.com/api/"
+            const url = "https://foodish-api.herokuapp.com/api/images/dosa"
             fetch(url)
                 .then((res) => {
                 return res.json()
