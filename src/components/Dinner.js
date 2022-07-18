@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
+import "./Meals.css"
+import ImageContainer from './ImageContainer'
 
 
 
@@ -37,9 +39,9 @@ function Dinner() {
 
     return(
 
-        <div>Dinner components
-            <button onClick={handleClick}>Random Dinner</button>
-            <img src={dinnerPhoto} alt='dinner'/>
+        <div>
+            <button onClick={handleClick}>Random Breakfast</button>
+            <ImageContainer img={dinnerPhoto} />
         </div>
     )
 }

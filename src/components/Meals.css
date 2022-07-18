@@ -1,0 +1,17 @@
+.double-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    width: 400px;
+    min-height: 400px;
+    max-height: auto;
+    /* border: 1px black solid; */
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
