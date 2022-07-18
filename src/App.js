@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome';
-import Cat from './components/Cat';
 import { Routes, Route, Link } from 'react-router-dom'
 import Breakfast from './components/Breakfast';
 import Lunch from './components/Lunch';
