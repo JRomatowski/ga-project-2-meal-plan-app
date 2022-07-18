@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+// IMPORT DOSAS HERE
+
 function Breakfast() {
 
     const [breakfastPhoto, setBreakfastPhoto] = useState('')
@@ -17,12 +19,25 @@ function Breakfast() {
             .catch((err) => {
                 console.log(err);
             })
-        }, [])
+        },[])
+
+        function handleClick() {
+            const url = "https://foodish-api.herokuapp.com/api/"
+            fetch(url)
+                .then((res) => {
+                return res.json()
+            }) 
+                .then((data) => {
+                setBreakfastPhoto(data.image)
+            })
+                .catch((err) => {
+                console.log(err);
+            })}
 
     return(
 
         <div>Breakfast
-            <button>Random Breakfast</button>
+            <button onClick={handleClick}>Random Breakfast</button>
             <img src={breakfastPhoto} alt='dinner'/>
         </div>
     )

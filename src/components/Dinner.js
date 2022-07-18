@@ -22,10 +22,23 @@ function Dinner() {
             })
         }, [])
 
+        function handleClick() {
+            const url = "https://foodish-api.herokuapp.com/api/"
+            fetch(url)
+                .then((res) => {
+                return res.json()
+            }) 
+                .then((data) => {
+                setDinnerPhoto(data.image)
+            })
+                .catch((err) => {
+                console.log(err);
+            })}
+
     return(
 
         <div>Dinner components
-            <button onClick={<Dinner />}>Random Dinner</button>
+            <button onClick={handleClick}>Random Dinner</button>
             <img src={dinnerPhoto} alt='dinner'/>
         </div>
     )

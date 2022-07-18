@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 
+// TRYING DRINKS HERE
+
+
+
 function Lunch() {
     const [lunchPhoto, setLunchPhoto] = useState('')
 
@@ -18,13 +22,31 @@ function Lunch() {
             })
         }, [])
 
-    return(
+        function handleClick() {
+            const url = "https://foodish-api.herokuapp.com/api/"
+            fetch(url)
+                .then((res) => {
+                return res.json()
+            }) 
+                .then((data) => {
+                setLunchPhoto(data.image)
+            })
+                .catch((err) => {
+                console.log(err);
+            })}
 
+    return(
+    <>
         <div>Lunch Component
-            <button>Random Lunch</button>
+            <button onClick={handleClick}>Lunch Button</button>
             <img src={lunchPhoto} alt='dinner'/>
         </div>
+        <main>
+        </main>
+    
+    </>
     )
 }
+
 
 export default Lunch
