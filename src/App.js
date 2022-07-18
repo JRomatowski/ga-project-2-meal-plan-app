@@ -1,24 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
-import Navigation from './components/Navigation';
+import Welcome from './components/Welcome';
 import Cat from './components/Cat';
 import { Routes, Route, Link } from 'react-router-dom'
+import Breakfast from './components/Breakfast';
+import Lunch from './components/Lunch';
+import Dinner from './components/Dinner';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header>
         <h1>
-          <Link to="/">Choose your Meal!</Link>
+          <Link to="/">Welcome</Link>
+          <br></br>
+          <Link to='/breakfast'>Breakfast</Link>
+          <br></br>
+          <Link to='/lunch'>Lunch</Link>
+          <br></br>
+          <Link to='/dinner'>Dinner</Link>
         </h1>
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Navigation/>} />
-          <Route/>
+          <Route path='/' element={<Welcome/>}/>
+          <Route path='/breakfast' element={<Breakfast/>}/>
+          <Route path='/lunch' element={<Lunch/>}/>
+          <Route path='/dinner' element={<Dinner/>}/>
         </Routes>
-
-
       </main>
     </div>
   );

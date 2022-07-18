@@ -1,6 +1,8 @@
 function Cat() {
     return(
+        <>
         <div>Cat Component</div>
+        </>
     )
 }
 
