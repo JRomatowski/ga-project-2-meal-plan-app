@@ -16,11 +16,11 @@ function App() {
     <div className="App">
       <header>
         <h1 className='navigation'>
-          <Link to="/">home/</Link>
+          <Link to="/">home</Link>
           {/* <Link to='/breakfast'>am.</Link>
           <Link to='/lunch'>lunch.</Link>
           <Link to='/dinner'>pm</Link> */}
-          <Link to='/recipes'>/recipes</Link>
+          <Link to='/recipes'>~recipes</Link>
         </h1>
       </header>
       <main>
