@@ -7,11 +7,18 @@
     width: 400px;
     min-height: 400px;
     max-height: auto;
-    /* border: 1px black solid; */
     padding: 1rem;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+#cat-photo {
+    /* best shape below so far */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* test shapes below */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
 }

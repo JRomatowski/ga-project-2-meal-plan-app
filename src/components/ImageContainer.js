@@ -1,10 +1,13 @@
+
+import "./Meals.css"
+
 function ImageContainer(props) {
     return (
         <>
-        <h3>Try to make this!</h3>
-        <div className='double-container'>
+        <h3 id='picture-message'>{props.msg}</h3>
+        <div className='double-container' id={props.id}>
             <div className='image-container'>
-                <img src={props.img} alt='food'/>
+                <img src={props.img} alt='food or cat'/>
             </div>
         </div>
         </>

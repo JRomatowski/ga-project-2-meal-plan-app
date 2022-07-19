@@ -6,7 +6,7 @@ import ImageContainer from './ImageContainer'
 
 function Dinner() {
 
-    
+    const message = 'Cook this without looking!'
     const [dinnerPhoto, setDinnerPhoto] = useState('')
 
     useEffect(() => {
@@ -41,7 +41,7 @@ function Dinner() {
 
         <div>
             <button onClick={handleClick}>Random Dinner</button>
-            <ImageContainer img={dinnerPhoto} />
+            <ImageContainer img={dinnerPhoto} msg={message} />
         </div>
     )
 }

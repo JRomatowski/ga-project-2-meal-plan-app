@@ -5,6 +5,8 @@ import ImageContainer from './ImageContainer'
 // TRYING DRINKS HERE
 
 function Lunch() {
+
+    const message = "Life choices!"
     const [lunchPhoto, setLunchPhoto] = useState('')
 
     useEffect(() => {
@@ -39,7 +41,7 @@ function Lunch() {
     <>
         <div>
             <button onClick={handleClick}>Random Lunch</button>
-            <ImageContainer img={lunchPhoto} />
+            <ImageContainer img={lunchPhoto} msg={message} />
         </div>
     </>
     )
