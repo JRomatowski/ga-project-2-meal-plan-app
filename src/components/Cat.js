@@ -37,7 +37,7 @@ function Cat() {
         <>
         {/* <button onClick={handleClick}>Cat friend!</button> */}
         {/* <ImageContainer img={catPhoto} msg='' id='cat-box' /> */}
-        <h3 id='picture-message'>Chooose your meal above!</h3>
+        <h3 id='picture-message'>"ClIcK On ReCiPeS AbOvE!!"</h3>
         <div className='double-container'>
             <div className='image-container'>
                 <img src={catPhoto} alt='food or cat' id='cat-photo'/>

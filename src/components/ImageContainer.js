@@ -8,6 +8,7 @@ function ImageContainer(props) {
         <div className='double-container' >
             <div className='image-container'>
                 <img src={props.img} alt='food or cat'/>
+                <p>{props.instructions}</p>
             </div>
         </div>
         </>
