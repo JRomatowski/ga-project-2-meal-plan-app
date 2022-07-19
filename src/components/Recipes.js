@@ -20,8 +20,8 @@ function Recipes() {
                 if (counter.current <= newData.idMeal) {
                     setLoading(false);
                 }
-                console.log(data)
-                console.log(data.meals[0])
+                // console.log(data)
+                // console.log(data.meals[0])
                 // console.log(data.length)
                 // console.log(newData.idMeal)
                 setRecipe(data.meals[0])
