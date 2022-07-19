@@ -1,5 +1,5 @@
 import './App.css';
-import Welcome from './components/Welcome';
+import Home from './components/Home';
 import { Routes, Route, Link } from 'react-router-dom'
 import Breakfast from './components/Breakfast';
 import Lunch from './components/Lunch';
@@ -25,7 +25,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Welcome/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/breakfast' element={<Breakfast/>}/>
           <Route path='/lunch' element={<Lunch/>}/>
           <Route path='/dinner' element={<Dinner/>}/>

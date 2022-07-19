@@ -21,7 +21,7 @@ function Cat() {
                 if (counter.current >= data.length) {
                     setLoading(false);
                 }
-                console.log(data)
+                // console.log(data)
                 setCatPhoto(data[0])
             })
             .catch((err) => {
