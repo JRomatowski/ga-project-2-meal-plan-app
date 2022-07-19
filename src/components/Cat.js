@@ -1,4 +1,4 @@
-import "./Meals.css"
+import "./Components.css"
 import { useState, useEffect, useRef } from 'react'
 
 

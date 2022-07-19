@@ -15,3 +15,5 @@ https://trello.com/invite/b/YxCnhoeu/e4836f5ece61cf8ab70134866d4d21a5/jromatowsk
 To set loading state to false they put a for loop in the fetch that uses a React hook called useRef, and then compares some number value from the fetched data, creates a condition for that comparison to return false or true, and then the loading state is set to false, then displaying the image container div on the page.  This effectively removes the unsightly broken link icon, but there is still a delay in the image loading.  I do not know why this works.  There is a more advanced method of image loading, "lazy loading" or using a placeholder image, but it seemed too advanced for now so coming back later.
 
 - If you don't put your fetch in a useEffect it will loop forever.
+
+- In my Categories.js, the entire thing wasn't working because I put a "{" instead of a "(" after the arrow function.

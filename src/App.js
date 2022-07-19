@@ -5,6 +5,7 @@ import Breakfast from './components/Breakfast';
 import Lunch from './components/Lunch';
 import Dinner from './components/Dinner';
 import Recipes from './components/Recipes';
+import Test from './components/Test';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Link to='/lunch'>lunch.</Link>
           <Link to='/dinner'>pm</Link> */}
           <Link to='/recipes'>~recipes</Link>
+          <Link to='/test'>~test</Link>
         </h1>
       </header>
       <main>
@@ -30,6 +32,7 @@ function App() {
           <Route path='/lunch' element={<Lunch/>}/>
           <Route path='/dinner' element={<Dinner/>}/>
           <Route path='/recipes' element={<Recipes/>}/>
+          <Route path='/test' element={<Test />}/>
         </Routes>
       </main>
     </div>
