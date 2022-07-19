@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import "./Meals.css"
+import "./Components.css"
 import ImageContainer from './ImageContainer';
 
 // IMPORT DOSAS HERE

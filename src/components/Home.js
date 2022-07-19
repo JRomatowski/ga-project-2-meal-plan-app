@@ -1,6 +1,6 @@
 import Cat from "./Cat";
 
-function Welcome() {
+function Home() {
     return(
         <>  
             <Cat />
@@ -8,4 +8,4 @@ function Welcome() {
     )
 }
 
-export default Welcome
+export default Home
