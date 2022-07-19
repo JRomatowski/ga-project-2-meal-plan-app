@@ -40,7 +40,7 @@ function Dinner() {
     return(
 
         <div>
-            <button onClick={handleClick}>Random Dinner</button>
+            <button onClick={handleClick}>More Dinner!</button>
             <ImageContainer img={dinnerPhoto} msg={message} />
         </div>
     )

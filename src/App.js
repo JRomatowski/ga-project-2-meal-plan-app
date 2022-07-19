@@ -14,14 +14,14 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>
-          <Link to="/">Welcome</Link>
-          <br></br>
-          <Link to='/breakfast'>Breakfast</Link>
-          <br></br>
-          <Link to='/lunch'>Lunch</Link>
-          <br></br>
-          <Link to='/dinner'>Dinner</Link>
+        <h1 className='navigation'>
+          <Link to="/">home//</Link>
+          {/* <br></br> */}
+          <Link to='/breakfast'>am.</Link>
+          {/* <br></br> */}
+          <Link to='/lunch'>lunch.</Link>
+          {/* <br></br> */}
+          <Link to='/dinner'>pm</Link>
         </h1>
       </header>
       <main>

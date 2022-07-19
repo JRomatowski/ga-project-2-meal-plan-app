@@ -5,11 +5,40 @@
   background-image: linear-gradient(to bottom right, #d1ceed , white);
 }
 
-button {
-  background-color: #73328d;
-  color: white;
+.navigation {
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Caveat', cursive;
+  /* font-family: 'Inconsolata', monospace;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Playfair Display SC', serif;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Ubuntu Mono', monospace; */
 }
 
+button {
+background-color: #73328d;
+color: white;
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Permanent Marker', cursive; */
+/* font-family: 'Playfair Display SC', serif; */
+/* font-family: 'Rubik Moonrocks', cursive; */
+font-family: 'Ubuntu Mono', monospace;
+border-radius: 10px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+width: 200px;
+}
+
+
+
 #picture-message {
-  color: #96439d;
+color: #96439d;
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Permanent Marker', cursive; */
+/* font-family: 'Playfair Display SC', serif; */
+/* font-family: 'Rubik Moonrocks', cursive; */
+font-family: 'Ubuntu Mono', monospace;
 }
