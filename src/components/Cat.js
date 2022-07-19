@@ -1,4 +1,3 @@
-import ImageContainer from "./ImageContainer"
 import "./Meals.css"
 import { useState, useEffect } from 'react'
 

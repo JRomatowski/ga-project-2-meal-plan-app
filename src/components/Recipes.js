@@ -39,6 +39,7 @@ function Recipes() {
             <button onClick={handleClick}>Another Recipe!</button>
             <ImageContainer
                 img={recipe.strMealThumb}
+                video={recipe.strYoutube}
                 msg={recipe.strMeal} 
                 instructions={recipe.strInstructions} 
             />
