@@ -21,18 +21,15 @@ img {
     max-width: 400px;
     max-height: auto;
     margin: auto;
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
-    color: #96439d;
     color: #390164;
 }
 
-#blurb {
+/* #blurb {
 
-}
-
-
+} */
 
 /* #cat-double-container {
     border: dotted 5px red;

@@ -51,10 +51,7 @@ function Cat() {
                 <img src={catPhoto} alt='food or cat' id='cat-photo'/>
             </div>
         </div> */}
-        <section id='home-screen-text'>
-            <h2>Click Above to get a random recipe to try!</h2>
-            <p id='blurb'>I often find myself wondering what to cook for the day.  When given the choice I seem to always get the same things.  I hoped to solve this problem by creating this website.  By clicking on the recipe button above you will have access to hundreds of recipes to try.  The algorithm sends you randomly chosen recipe.</p>
-        </section>
+
         <div style={{visibility: loading ? "hidden" : "visible"}} className='double-container' id='cat-double-container'>
             <div className='cat-image-container'>
                 <img src={catPhoto} alt='food or cat' id='cat-photo'/>

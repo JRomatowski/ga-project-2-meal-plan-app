@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import "./Components.css"
-import ImageContainer from './RecipeContainer'
+import ImageContainer from '../RecipeContainer'
 
 // TRYING DRINKS HERE
 
