@@ -3,6 +3,7 @@
   /* background-image: linear-gradient(to right, #d1ceed , white);
   background-image: linear-gradient(to right, #d1ceed , white); */
   background-image: linear-gradient(to bottom right, #d1ceed , white);
+  height: 100vh;
 }
 
 .navigation {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import ImageContainer from './ImageContainer'
+import ImageContainer from './RecipeContainer'
 
 function Recipes() {
 
@@ -20,10 +20,6 @@ function Recipes() {
                 if (counter.current <= newData.idMeal) {
                     setLoading(false);
                 }
-                // console.log(data)
-                // console.log(data.meals[0])
-                // console.log(data.length)
-                // console.log(newData.idMeal)
                 setRecipe(data.meals[0])
             })
             .catch((err) => {
@@ -38,11 +34,6 @@ function Recipes() {
                 return res.json()
             }) 
                 .then((data) => {
-                    // The below code isn't required because the image has already loaded on intial render from the useEffect, therefore old images act as a placeholder.  Fine for now.
-                    // let newData = data.meals[0]
-                    // if (counter.current <= newData.idMeal) {
-                    //     setLoading(false);
-                    // }
                 setRecipe(data.meals[0])
             })
                 .catch((err) => {

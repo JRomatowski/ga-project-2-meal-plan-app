@@ -3,7 +3,7 @@
     justify-content: center;
 }
 
-.image-container {
+.recipe-container {
     width: 400px;
     min-height: 400px;
     max-height: auto;
@@ -49,4 +49,8 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#show-hide-button {
+    margin-top: 1rem;
 }
