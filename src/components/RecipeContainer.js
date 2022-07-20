@@ -1,6 +1,4 @@
 import "./Components.css"
-// import {useState} from 'react'
-import RecipeInstructions from "./RecipeInstructions"
 
 function RecipeContainer(props) {
 
@@ -13,9 +11,6 @@ function RecipeContainer(props) {
                     <img src={props.img} alt='food or cat'/>
                     <p id='video-announcement'>(video)</p>                    
                 </a>
-                <RecipeInstructions
-                    instructions={props.instructions}
-                    />
             </div>
         </div>
         </>

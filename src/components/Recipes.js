@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
-import ImageContainer from './RecipeContainer'
+import RecipeContainer from './RecipeContainer'
+import RecipeInstructions from './RecipeInstructions';
 
 function Recipes() {
 
     const [recipe, setRecipe] = useState({})
     const [loading, setLoading] = useState(true);
+
     const counter = useRef(0);
 
     useEffect(() => {
@@ -45,11 +47,13 @@ function Recipes() {
         <div>
             <button onClick={handleClick}>Another Recipe!</button>
             <div id='recipe-image-container' style={{visibility: loading ? "hidden" : "visible"}}>
-                <ImageContainer
+                <RecipeContainer
                     img={recipe.strMealThumb}
                     video={recipe.strYoutube}
-                    msg={recipe.strMeal} 
-                    instructions={recipe.strInstructions}             
+                    msg={recipe.strMeal}           
+                />
+                <RecipeInstructions
+                    instructions={recipe.strInstructions}
                 />
             </div>
         </div>

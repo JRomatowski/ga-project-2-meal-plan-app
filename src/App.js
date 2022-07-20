@@ -22,9 +22,10 @@ function App() {
           <Link to='/lunch'>lunch.</Link>
           <Link to='/dinner'>pm</Link> */}
           <Link to='/recipes'>~recipes</Link>
-          <Link to='/test'>~test</Link>
+          {/* <Link to='/test'>~test</Link> */}
         </h1>
       </header>
+
       <main>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -35,6 +36,10 @@ function App() {
           <Route path='/test' element={<Test />}/>
         </Routes>
       </main>
+      {/* <footer>
+        <h1 className='footer-navigation'>Meow  
+        </h1>
+      </footer> */}
     </div>
   );
 }
