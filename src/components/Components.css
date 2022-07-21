@@ -1,6 +1,7 @@
 img {
     max-width: 100%;
     height: auto;
+
 }
 
 #category-box {
@@ -22,6 +23,7 @@ img {
     max-height: auto;
     margin: auto;
     padding: 0 1rem;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
     color: #390164;
