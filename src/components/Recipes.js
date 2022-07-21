@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import Ingredients from './Ingredients';
 import RecipeContainer from './RecipeContainer'
 import RecipeInstructions from './RecipeInstructions';
 
@@ -52,6 +53,7 @@ function Recipes() {
                     video={recipe.strYoutube}
                     msg={recipe.strMeal}           
                 />
+                {/* <Ingredients /> */}
                 <RecipeInstructions
                     instructions={recipe.strInstructions}
                 />

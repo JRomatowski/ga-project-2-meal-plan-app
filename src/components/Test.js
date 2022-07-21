@@ -1,6 +1,6 @@
 // import Categories from "./Categories"
 import Ingredients from "./Ingredients"
-import Measurements from "./Measurements"
+
 
 function Test() {
     return (
@@ -8,7 +8,6 @@ function Test() {
         <div>Test Component</div>
         {/* <Categories /> */}
         <Ingredients />
-        {/* <Measurements /> */}
         </>
     )
 }
