@@ -1,5 +1,5 @@
 // import Categories from "./Categories"
-import Ingredients from "./Ingredients"
+// import Ingredients from "./Ingredients"
 
 
 function Test() {
@@ -7,7 +7,7 @@ function Test() {
         <>
         <div>Test Component</div>
         {/* <Categories /> */}
-        <Ingredients />
+        {/* <Ingredients /> */}
         </>
     )
 }

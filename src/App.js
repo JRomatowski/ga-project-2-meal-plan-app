@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Recipes from './components/Recipes';
 
 // TEST COMPONENT
-import Test from './components/Test';
+// import Test from './components/Test';
 
 
 // OLD IMPORTS
@@ -23,7 +23,7 @@ function App() {
           {/* <Link to='/breakfast'>am.</Link>
           <Link to='/lunch'>lunch.</Link>
           <Link to='/dinner'>pm</Link> */}
-          <Link to='/test'>|||test</Link>
+          {/* <Link to='/test'>|||test</Link> */}
           
         </h1>
       </header>
@@ -35,7 +35,7 @@ function App() {
           {/* <Route path='/breakfast' element={<Breakfast/>}/>
           <Route path='/lunch' element={<Lunch/>}/>
           <Route path='/dinner' element={<Dinner/>}/> */}
-          <Route path='/test' element={<Test />}/>
+          {/* <Route path='/test' element={<Test />}/> */}
         </Routes>
       </main>
       {/* <footer>

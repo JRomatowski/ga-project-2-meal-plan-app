@@ -85,3 +85,8 @@ img {
     border: 0;
     margin: .5px;
 }
+
+#ingredient-lists {
+    display: flex;
+    
+}

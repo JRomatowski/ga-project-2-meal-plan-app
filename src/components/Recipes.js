@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import Ingredients from './Ingredients';
 import RecipeContainer from './RecipeContainer'
 import RecipeInstructions from './RecipeInstructions';
 
@@ -7,6 +6,8 @@ function Recipes() {
 
     const [recipe, setRecipe] = useState({})
     const [loading, setLoading] = useState(true);
+    const [ingredientList, setIngredientList] = useState([])
+    const [measurementList, setMeasurementList] = useState([])
 
     const counter = useRef(0);
 
@@ -18,12 +19,32 @@ function Recipes() {
             }) 
             .then((data) => {
                 let newData = data.meals[0]
-                // I have no idea why this works, but I found it on stack overflow.  This is different than how I had it on ./Cat.js because the item being returned with the fetch is different, not entirely clear on why.  This API gives an object, and the cat API gives an array?  
                 counter.current += 1;
                 if (counter.current <= newData.idMeal) {
                     setLoading(false);
                 }
-                setRecipe(data.meals[0])
+                setRecipe(data.meals[0]) 
+                return data.meals[0]               
+            })
+            .then((data) => {
+                console.log(data)
+                let ingredientArray = []
+                for (let i=1; i<21; i+=1) {
+                    let ingredientString = "strIngredient"+i
+                    if (data[ingredientString].length > 1) {
+                    ingredientArray.push(i + ". " + data[ingredientString])
+                    setIngredientList(ingredientArray)
+                    } 
+                }
+                let measurementArray = []
+                for (let i=1; i<21; i+=1) {
+                    let measurementString = "strMeasure"+i
+                    if (data[measurementString].length > 0) {
+                    measurementArray.push(data[measurementString])
+                    setMeasurementList(measurementArray)
+                    } else {
+                        return
+                    }}
             })
             .catch((err) => {
                 console.log(err);
@@ -38,6 +59,27 @@ function Recipes() {
             }) 
                 .then((data) => {
                 setRecipe(data.meals[0])
+                return data.meals[0]               
+            })
+            .then((data) => {
+                console.log(data)
+                let ingredientArray = []
+                for (let i=1; i<21; i+=1) {
+                    let ingredientString = "strIngredient"+i
+                    if (data[ingredientString].length > 1) {
+                    ingredientArray.push(i + ". " + data[ingredientString])
+                    setIngredientList(ingredientArray)
+                    } 
+                }
+                let measurementArray = []
+                for (let i=1; i<21; i+=1) {
+                    let measurementString = "strMeasure"+i
+                    if (data[measurementString].length > 0) {
+                    measurementArray.push(data[measurementString])
+                    setMeasurementList(measurementArray)
+                    } else {
+                        return
+                    }}
             })
                 .catch((err) => {
                 console.log(err);
@@ -48,12 +90,27 @@ function Recipes() {
         <div>
             <button onClick={handleClick}>Another Recipe!</button>
             <div id='recipe-image-container' style={{visibility: loading ? "hidden" : "visible"}}>
+
                 <RecipeContainer
                     img={recipe.strMealThumb}
                     video={recipe.strYoutube}
                     msg={recipe.strMeal}           
                 />
-                {/* <Ingredients /> */}
+
+                <div id='ingredient-lists'>
+                    <ul>
+                        {ingredientList.map((ingredientItem, index) => (
+                            <ul key={index}>{ingredientItem}</ul>
+                        ))}                
+                    </ul>
+
+                    <ul>
+                        {measurementList.map((measurementItem, index) => (
+                            <ul key={index}>{measurementItem}</ul>
+                        ))}
+                    </ul>
+                </div>
+
                 <RecipeInstructions
                     instructions={recipe.strInstructions}
                 />

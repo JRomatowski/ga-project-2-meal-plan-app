@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import "./Components.css"
 
 function Ingredients() {
 
@@ -41,6 +42,7 @@ function Ingredients() {
 
     return (
         <>
+        <div id='ingredient-lists'>
             <ul>
                 {ingredientList.map((ingredientItem, index) => (
                     <ul key={index}>{ingredientItem}</ul>
@@ -51,6 +53,7 @@ function Ingredients() {
                     <ul key={index}>{measurementItem}</ul>
                 ))}
             </ul>
+        </div>
         </>
 
     )
