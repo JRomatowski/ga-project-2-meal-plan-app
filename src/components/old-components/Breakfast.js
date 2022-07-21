@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import "./Components.css"
-import ImageContainer from './ImageContainer';
+import ImageContainer from '../RecipeContainer';
 
 // IMPORT DOSAS HERE
 

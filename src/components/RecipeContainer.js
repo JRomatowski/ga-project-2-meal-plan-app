@@ -1,21 +1,20 @@
 import "./Components.css"
 
-function ImageContainer(props) {
+function RecipeContainer(props) {
 
     return (
         <>
         <h3 id='picture-message'>{props.msg}</h3>
         <div className='double-container' >
-            <div className='image-container'>              
+            <div className='recipe-container'>              
                 <a href={props.video} target="_blank" rel="noreferrer noopener">
                     <img src={props.img} alt='food or cat'/>
-                    <p id='video-announcement'>(video)</p>
+                    <p id='video-announcement'>(video)</p>                    
                 </a>
-                <p id='recipe-instructions'>{props.instructions}</p>
             </div>
         </div>
         </>
     )
 }
 
-export default ImageContainer
+export default RecipeContainer

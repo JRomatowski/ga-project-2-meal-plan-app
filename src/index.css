@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#meta-background {
+  height: 100vh;
+  /* background-image: linear-gradient(to bottom right, #cdf5db, #8bd1d3, #c0aec4); */
+  /* background-image: linear-gradient(to bottom, #cdf5db,  #8bd1d3, #c0aec4); */
+  /* background-image: linear-gradient(to bottom, #c0aec4,  #8bd1d3, #c0aec4); */
+
+}
+
+

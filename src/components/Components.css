@@ -1,42 +1,13 @@
-.double-container {
-    display: flex;
-    justify-content: center;
-}
-
-.image-container {
-    width: 400px;
-    min-height: 400px;
-    max-height: auto;
-    padding: 1rem;
-}
-
 img {
     max-width: 100%;
     height: auto;
-}
-
-#cat-photo {
-    /* best shape below so far */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    /* test shapes below */
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 
 }
 
-#picture-message {
-    padding-bottom:0px ;
-    margin-bottom: 5px;
-
-}
-
-#video-announcement {
-    padding: 0;
-    border: 0;
-    margin: .5px;
-}
-
-#recipe-instructions {
-    margin-top: 20px;
+#category-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #category-element {
@@ -45,8 +16,70 @@ img {
     font-size: 50px;
 }
 
-#category-box {
+/* Home Screen */
+
+#home-screen-text {
+    max-width: 400px;
+    max-height: auto;
+    margin: auto;
+    padding: 0 1rem;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #390164;
+}
+
+/* #blurb {
+
+} */
+
+/* #cat-double-container {
+    border: dotted 5px red;
+} */
+
+#cat-photo {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    border: double 5px #cdf5db;
+}
+
+/* Recipe Page */
+
+.double-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.recipe-container {
+    max-width: 400px;
+    max-height: auto;
+    padding: 1rem;
+}
+
+#picture-message {
+    padding-bottom:5px ;
+    margin-bottom: 5px;
+}
+
+#recipe-text-box {
+    overflow: auto;
+    max-height: 200px;
+}
+
+#recipe-instructions {
+    border:  #cdf5db 20px dotted;
+    max-width: 400px;
+    max-height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    color: #390164;
+}
+
+#show-hide-button {
+    margin-top: 1rem;
+}
+
+#video-announcement {
+    padding: 0;
+    border: 0;
+    margin: .5px;
 }

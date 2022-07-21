@@ -45,12 +45,19 @@ function Cat() {
         <>
         {/* <button onClick={handleClick}>Cat friend!</button> */}
         {/* <ImageContainer img={catPhoto} msg='' id='cat-box' /> */}
-        <h3 id='picture-message'>"ClIcK On ReCiPeS AbOvE!!"</h3>
-        <div style={{visibility: loading ? "hidden" : "visible"}} className='double-container'>
+        {/* <h3 id='picture-message'>"ClIcK On ReCiPeS AbOvE!!"</h3> */}
+        {/* <div style={{visibility: loading ? "hidden" : "visible"}} className='double-container'>
             <div className='image-container'>
                 <img src={catPhoto} alt='food or cat' id='cat-photo'/>
             </div>
+        </div> */}
+
+        <div style={{visibility: loading ? "hidden" : "visible"}} className='double-container' id='cat-double-container'>
+            <div className='cat-image-container'>
+                <img src={catPhoto} alt='food or cat' id='cat-photo'/>
+            </div>
         </div>
+
         </>
     )
 }

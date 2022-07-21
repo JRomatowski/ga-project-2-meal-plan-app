@@ -1,23 +1,22 @@
 import { useState, useEffect } from 'react'
-import "./Components.css"
-import ImageContainer from './ImageContainer'
+import ImageContainer from '../RecipeContainer'
 
+// TRYING DRINKS HERE
 
+function Lunch() {
 
-function Dinner() {
-
-    const message = 'Cook this without looking!'
-    const [dinnerPhoto, setDinnerPhoto] = useState('')
+    const message = "Life choices!"
+    const [lunchPhoto, setLunchPhoto] = useState('')
 
     useEffect(() => {
-        const url = "https://foodish-api.herokuapp.com/api/"
+        const url = "https://thecocktaildb.com/api/json/v1/1/random.php"
         fetch(url)
             .then((res) => {
                 return res.json()
             }) 
             .then((data) => {
                 console.log(data)
-                setDinnerPhoto(data.image)
+                setLunchPhoto(data.drinks[0].strDrinkThumb)
             })
             .catch((err) => {
                 console.log(err);
@@ -25,25 +24,27 @@ function Dinner() {
         }, [])
 
         function handleClick() {
-            const url = "https://foodish-api.herokuapp.com/api/"
+            const url = "https://thecocktaildb.com/api/json/v1/1/random.php"
             fetch(url)
                 .then((res) => {
                 return res.json()
             }) 
                 .then((data) => {
-                setDinnerPhoto(data.image)
+                setLunchPhoto(data.drinks[0].strDrinkThumb)
             })
                 .catch((err) => {
                 console.log(err);
             })}
 
     return(
-
+    <>
         <div>
-            <button onClick={handleClick}>More Dinner!</button>
-            <ImageContainer img={dinnerPhoto} msg={message} />
+            <button onClick={handleClick}>More Life Choices!</button>
+            <ImageContainer img={lunchPhoto} msg={message} />
         </div>
+    </>
     )
 }
 
-export default Dinner
+
+export default Lunch
