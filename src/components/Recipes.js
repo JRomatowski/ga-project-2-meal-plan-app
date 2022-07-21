@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import RecipeContainer from './RecipeContainer'
 import RecipeInstructions from './RecipeInstructions';
+import "./Components.css"
 
 function Recipes() {
 
@@ -27,7 +28,6 @@ function Recipes() {
                 return data.meals[0]               
             })
             .then((data) => {
-                console.log(data)
                 let ingredientArray = []
                 for (let i=1; i<21; i+=1) {
                     let ingredientString = "strIngredient"+i
@@ -51,6 +51,8 @@ function Recipes() {
             })
         }, [])
 
+        console.log(recipe)
+
         function handleClick() {
             const url = "https://www.themealdb.com/api/json/v1/1/random.php"
             fetch(url)
@@ -62,7 +64,6 @@ function Recipes() {
                 return data.meals[0]               
             })
             .then((data) => {
-                console.log(data)
                 let ingredientArray = []
                 for (let i=1; i<21; i+=1) {
                     let ingredientString = "strIngredient"+i
@@ -91,20 +92,24 @@ function Recipes() {
             <button onClick={handleClick}>Another Recipe!</button>
             <div id='recipe-image-container' style={{visibility: loading ? "hidden" : "visible"}}>
 
+                <h3 id='picture-message'>{recipe.strMeal}</h3>
+
                 <RecipeContainer
                     img={recipe.strMealThumb}
                     video={recipe.strYoutube}
                     msg={recipe.strMeal}           
                 />
 
+
+
                 <div id='ingredient-lists'>
-                    <ul>
+                    <ul className='ingredient-list-items' id='ingredient-food'>
                         {ingredientList.map((ingredientItem, index) => (
                             <ul key={index}>{ingredientItem}</ul>
                         ))}                
                     </ul>
 
-                    <ul>
+                    <ul className='ingredient-list-items'>
                         {measurementList.map((measurementItem, index) => (
                             <ul key={index}>{measurementItem}</ul>
                         ))}
