@@ -4,7 +4,7 @@ function RecipeContainer(props) {
 
     return (
         <>
-        <h3 id='picture-message'>{props.msg}</h3>
+        {/* <h3 id='picture-message'>{props.msg}</h3> */}
         <div className='double-container' >
             <div className='recipe-container'>              
                 <a href={props.video} target="_blank" rel="noreferrer noopener">
