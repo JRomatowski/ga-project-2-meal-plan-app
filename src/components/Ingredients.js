@@ -17,10 +17,14 @@ function Ingredients() {
                 let mainArray = data.meals[0]
                 for (let i=1; i<21; i+=1) {
                     let ingredientString = "strIngredient"+i
-                    // console.log(mainArray[ingredientString])
-                    ingredientArray.push(mainArray[ingredientString])
-                    // console.log(ingredientArray)
+                    if (mainArray[ingredientString].length > 1) {
+                    ingredientArray.push(i + ". " + mainArray[ingredientString])
                     setIngredientList(ingredientArray)
+                    } 
+                    
+                    else {
+                        return
+                    }
                 }
             })           
             .catch((err) => {
@@ -28,14 +32,14 @@ function Ingredients() {
             })
 }, [])
 
-console.log(ingredientList)
+// console.log(ingredientList)
 
     return (
         <>
             <div>Ingredients Components</div>
             <ul>
                 {ingredientList.map((ingredientItem) => (
-                    <ul>{ingredientItem}</ul>
+                    <ul key={ingredientItem}>{ingredientItem}</ul>
                 ))}
             </ul>
         </>
