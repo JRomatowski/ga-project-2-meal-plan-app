@@ -51,8 +51,6 @@ function Recipes() {
             })
         }, [])
 
-        console.log(recipe)
-
         function handleClick() {
             const url = "https://www.themealdb.com/api/json/v1/1/random.php"
             fetch(url)
@@ -85,6 +83,8 @@ function Recipes() {
                 .catch((err) => {
                 console.log(err);
             })}
+
+            // console.log(recipe)
 
     return(
 
@@ -119,6 +119,7 @@ function Recipes() {
                 <RecipeInstructions
                     instructions={recipe.strInstructions}
                 />
+                
             </div>
         </div>
     )

@@ -74,6 +74,8 @@ img {
     margin: 0 auto;
     color: #390164;
     font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.5;
 }
 
 #show-hide-button {
@@ -89,14 +91,20 @@ img {
 #ingredient-lists {
     display: flex;
     justify-content: center;
-    border: #cdf5db 5px dotted;
-    border-bottom: white 5px solid;
+    /* border: #cdf5db 5px dotted; */
+    /* border-bottom: white 5px dotted; */
     max-width: 400px;
+    font-style: italic;
+    font-family: 'Varela Round', sans-serif;
+    background-image: linear-gradient(to bottom, #cdf5db,  white);
+    clip-path: inset(1px 1px 1px round 15px);
+    padding-bottom: 10px;
+    /* box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .ingredient-list-items {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     text-align: left;
     color: #390164;
 }
