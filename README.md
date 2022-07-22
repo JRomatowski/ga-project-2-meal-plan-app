@@ -1,7 +1,7 @@
 
 ## Website Link
 
-https://jromatowski-project-2.netlify.app/
+https://mealchoices.netlify.app
 
 ## Photos of Website
 
