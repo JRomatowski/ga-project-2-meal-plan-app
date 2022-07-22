@@ -1,13 +1,11 @@
 
+## Website Link
+
+https://jromatowski-project-2.netlify.app/
+
 ## Project Description
 
 Welcome to my random recipe website, "CHOICES". The purpose of this project is to provide random food recipes (to cook) at the click of a button.  I decided to make this website because I personally am struggling with trying to eat out less.  Cooking at home has always been easy for me as long as I am just microwaving pre-cooked meals. I wanted to try and expand the types of meals I was preparing at home.  Being overwhelmed by the choices, I felt that something like this, an application that makes the decisions for me, would help me succeed!
-
-## Wireframe
-
-## Component Tree
-
-## User Stories
 
 ## Technologies Used
 
@@ -15,7 +13,7 @@ I wrote this website using React.  Also, I used the following API:
 
 https://www.themealdb.com/api.php
 
-## Struggles
+<!-- ## Struggles
 
 - When I had the useEffect, the image from the link would render twice.  I fixed this by removing the strict router tag from the index.js.
 
@@ -43,4 +41,4 @@ To set loading state to false they put a for loop in the fetch that uses a React
 - Media Queries to make the desktop version better
 - I would like to switch API's to one that includes nutritional information, such as calories and macros.  
 - Looking for a way to format the "cooking instruction" paragraph.  As of now it's being pulled out of the API, so there's no way to format the block of text to be more accessible.
-- I would like to be able to search foods by category. Doing this with the current API is possible, but I was not able to complete this feature by the project deadline.
+- I would like to be able to search foods by category. Doing this with the current API is possible, but I was not able to complete this feature by the project deadline. -->
