@@ -5,7 +5,7 @@ https://jromatowski-project-2.netlify.app/
 
 ## Photos of Website
 
-# ![](</choices-photo-1.png)
+# ![](/choices-photo-1.png)
 # ![](/choices-photo-2.png)
 
 ## Project Description
