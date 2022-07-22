@@ -84,6 +84,8 @@ function Recipes() {
                 console.log(err);
             })}
 
+            // console.log(recipe)
+
     return(
 
         <div>
@@ -117,6 +119,7 @@ function Recipes() {
                 <RecipeInstructions
                     instructions={recipe.strInstructions}
                 />
+                
             </div>
         </div>
     )
